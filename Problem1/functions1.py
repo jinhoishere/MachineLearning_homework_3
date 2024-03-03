@@ -37,7 +37,7 @@ def initialize_w_b(dimension):
     "Please write one sentence code to initialize w as a zeros vector"
     ### START CODE HERE ### (1 line of code)
     "hint: initialized zeros vector of shape (dimension, 1) using np.zeros()"
-    w = np.zeros(1)
+    w = np.zeros((dimension, 1))
     b = 0
     ### END CODE HERE ###
     print (w.shape == (dimension, 1))
@@ -92,7 +92,8 @@ def backpropagation(X, Y, A):
     "Please complete the following two sentences to calculate the derivatives of w and b, respectively"
     ### START CODE HERE ### (2 lines of code)
     " hint: dw is equal to: X times the transpose of (A-Y) and then divided by m, which can be retrieved by the computation graph"
-    dw = (X * np.transpose(A-Y)) / m
+    # dw = (X * np.transpose(A-Y)) / m
+    dw = (np.dot(X, (A-Y).T)) / m
     "hint: db is equal to: summation of (A-Y) and then divided by m"
     db = np.sum(A-Y) / m
     ### END CODE HERE ###

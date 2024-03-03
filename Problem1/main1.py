@@ -36,8 +36,8 @@ train_set_x_orig, train_set_y, test_set_x_orig, test_set_y, classes = load_datas
 print(classes)
 
 # View two images in the database; You can comment the following after viewing the images
-index1 = 25
-index2 = 36 #change number to see different images
+index1 = 25 # 25
+index2 = 36 #change number to see different images 36 (0 to 208)
 plt.imshow(train_set_x_orig[index1])
 plt.show()
 plt.imshow(train_set_x_orig[index2])
@@ -47,21 +47,21 @@ plt.show()
 ### Start code here ###
 "Please complete the following four printing sentences to show the corresponding sizes of our data"
 "hint: using np.shape() to get sizes of our train and test data"
-print("the shape of train_set_x_orig: " + np.shape(train_set_x_orig))
-print("the shape of train_set_y: " + np.shape(train_set_y))
-print("the shape of test_set_x_orig: " + np.shape(test_set_x_orig))
-print("the shape of test_set_y: " + np.shape(test_set_y))
+print("the shape of train_set_x_orig: " + str(np.shape(train_set_x_orig)))
+print("the shape of train_set_y: " + str(np.shape(train_set_y)))
+print("the shape of test_set_x_orig: " + str(np.shape(test_set_x_orig)))
+print("the shape of test_set_y: " + str(np.shape(test_set_y)))
 ### End code here ###
 
 '''T1 (3')'''
 ### Answer the following questions: ###
 
 ### 1. How many images are there in the training dataset? (m_train)
-### Your answer:
+### Your answer: 209
 ### 2. What is the size of those images? (n_x)
-### Your answer:
+### Your answer: 64 x 64
 ### 3. How many images are there in the test dataset? (m_test)
-### Your answer:
+### Your answer: 50
 
 ### End questions ###
 
@@ -74,10 +74,10 @@ test_set_x_flatten = test_set_x_orig.reshape(test_set_x_orig.shape[0], -1).T
 '''C2 (8')'''
 "Please complete the following four printing sentences to show the corresponding sizes of our data after flattening"
 ### Start code here ###
-print("train_set_x_flatten shape: " + np.shape(train_set_x_flatten))
-print("train_set_y shape: " + np.shape(train_set_y))
-print("test_set_x_flatten shape: " + np.shape(test_set_x_flatten))
-print("test_set_y shape: " + np.shape(train_set_y))
+print("train_set_x_flatten shape: " + str(np.shape(train_set_x_flatten)))
+print("train_set_y shape: " + str(np.shape(train_set_y)))
+print("test_set_x_flatten shape: " + str(np.shape(test_set_x_flatten)))
+print("test_set_y shape: " + str(np.shape(train_set_y)))
 ### End code here ###
 
 # Standardize our dataset
@@ -147,7 +147,7 @@ print ("y = " + str(test_set_y[0, index]) + ", you predicted that it is a \"" + 
 ### Answer the following questions: ###
 
 ### 1. How many for-loops are there in this code (the code for Problem 1)? Why?
-### Your answer:
+### Your answer: 2000, because the number of iterations is assigned to 2000.
 
 ### End questions ###
 
