@@ -147,7 +147,7 @@ print ("y = " + str(test_set_y[0, index]) + ", you predicted that it is a \"" + 
 ### Answer the following questions: ###
 
 ### 1. How many for-loops are there in this code (the code for Problem 1)? Why?
-### Your answer: 2000, because the number of iterations is assigned to 2000.
+### Your answer: 2000, because the number of iterations is assigned to 2000 to find best parameters.
 
 ### End questions ###
 
