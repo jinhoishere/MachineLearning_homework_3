@@ -59,7 +59,7 @@ print("the shape of test_set_y: " + str(np.shape(test_set_y)))
 ### 1. How many images are there in the training dataset? (m_train)
 ### Your answer: 209
 ### 2. What is the size of those images? (n_x)
-### Your answer: 64 x 64
+### Your answer: (64, 64)
 ### 3. How many images are there in the test dataset? (m_test)
 ### Your answer: 50
 
