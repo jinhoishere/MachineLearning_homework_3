@@ -6,4 +6,4 @@
 ### About this directory
 - `Problem1` directory has all the answers for the problem 1.
 - `Prlblem2` directory has all the answers for the problem 2.
-- There is a repository named `figures` along the path `./Problems2/figures`. This repository contains figures as the results of implementing 3 different learning rates.
+- There is a repository named `figures` along the path `./Problem2/figures`. This repository contains figures as the results of implementing 3 different learning rates.
